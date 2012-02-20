@@ -1,0 +1,40 @@
+{
+   "name": "ean",
+   "description": "A minimal EAN and ISBN implementation",
+   "version": "0.0.1",
+   "homepage": "https://github.com/hakanensari/ean",
+   "author": "Hakan Ensari <hakan.ensari@papercavalier.com>",
+   "main": "./lib/ean",
+   "directories": {
+     "lib": "./lib/ean"
+   },
+   "bugs": {
+     "url": "https://github.com/hakanensari/ean/issues"
+   },
+   "repository": {
+     "type": "git",
+     "url": "git://github.com/hakanensari/ean.git"
+   },
+   "devDependencies": {
+     "coffee-script": "*",
+     "mocha": "*",
+     "should": "*"
+   },
+   "scripts": {
+     "test": "node_modules/mocha/bin/mocha test/*.coffee"
+   },
+   "engines": {
+     "node": ">= 0.4.0"
+   },
+   "licenses": [
+     {
+       "type": "MIT",
+       "url": "https://raw.github.com/hakanensari/ean/master/LICENSE"
+     }
+   ],
+   "tags": [
+     "ISBN",
+     "EAN",
+     "checkdigit"
+   ]
+}
