@@ -1,7 +1,7 @@
 {
    "name": "ean",
    "description": "A minimal EAN and ISBN implementation",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "homepage": "https://github.com/hakanensari/ean",
    "author": "Hakan Ensari <hakan.ensari@papercavalier.com>",
    "main": "./lib/ean",
@@ -34,7 +34,6 @@
    ],
    "tags": [
      "ISBN",
-     "EAN",
-     "checkdigit"
+     "EAN"
    ]
 }
