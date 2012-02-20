@@ -5,11 +5,11 @@
 isValid = (val) ->
   val.length is 13 and (
     ary = (parseInt x for x in val)
-    ary[12] is checkDigit ary[0..11]
+    ary[12] is checksum ary[0..11]
   )
 
 # Takes the data digits of an EAN code and calculates their checksum digit.
-checkDigit = (ary) ->
+checksum = (ary) ->
   sum = ary
     .reduce((a, x, i) ->
       a.push [x, _weights[i]]
@@ -28,5 +28,6 @@ _weights = do ->
 
   ary
 
-module.exports.isValid    = isValid
-module.exports.checkDigit = checkDigit
+module.exports =
+  isValid:  isValid
+  checksum: checksum

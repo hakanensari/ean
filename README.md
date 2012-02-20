@@ -15,8 +15,8 @@ npm install ean
 ```coffee
 ean = require 'ean'
 
-ean.isValid    '9780262011531' # false
-ean.checkDigit '978026201153'  # 2
+ean.isValid  '9780262011531' # false
+ean.checksum '978026201153'  # 2
 
 [status]: https://secure.travis-ci.org/hakanensari/ean.png
 [travis]: http://travis-ci.org/hakanensari/ean
