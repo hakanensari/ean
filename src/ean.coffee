@@ -10,6 +10,7 @@ isValid = (val) ->
 
 # Takes the data digits of an EAN code and calculates their checksum digit.
 checksum = (ary) ->
+  ary = ary.split ''
   sum = ary
     .reduce((a, x, i) ->
       a.push [x, _weights[i]]
