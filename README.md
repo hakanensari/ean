@@ -12,11 +12,14 @@ npm install ean
 
 ## Usage
 
-```coffee
-ean = require 'ean'
+```javascript
+ean = require('ean');
 
-ean.isValid  '9780262011531' # false
-ean.checksum '978026201153'  # 2
+var bad = '9780262011531';
+ean.isValid(bad); // false
+var digits = bad.split('').slice(0, 12);
+ean.checksum(digits); // 2
+```
 
 [status]: https://secure.travis-ci.org/hakanensari/ean.png
 [travis]: http://travis-ci.org/hakanensari/ean
